@@ -1,0 +1,36 @@
+@import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css);
+body {
+	font-family: "Helvetica Neue"
+}
+
+
+nav {
+	border-bottom: 1px solid #979797;
+	position: relative;
+	margin-left: 30px;
+	padding-left: 20px;
+}
+
+nav ul {
+	position: absolute;
+	bottom: 5px;
+	right: 10px;
+	margin: 0;
+}
+
+nav a {
+	color: black;
+	font-family: "Helvetica Neue";
+	font-weight: 300;
+}
+
+img {
+	width: 50px;
+	height: 50px;
+}
+
+.lists {
+	border-bottom: solid;
+	border-bottom-width: 4px;
+	border-color: black;
+}

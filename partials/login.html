@@ -1,0 +1,19 @@
+<div class="container">
+	<form name="loginForm">
+		<div class="col-sm-4 col-md-offset-1 col-sm-offset-1" id="signUp">
+			<h2>Login</h2>
+			<p ng-show="invalidCred">Invalid Credentials</p>
+			<div class="form-group">
+				<input class="form-control" name="uName" type="text" placeholder="Username" required ng-model="newUser.uName">
+			</div>
+			<div class="form-group">
+				<input class="form-control" name="password" type="password" placeholder="Password" required ng-model="newUser.password">
+			</div>
+			<div class="form-group">
+				<button class="btn btn-primary" id='submit' type="submit" ng-click="login(newUser.uName, newUser.password)">Login</button>
+			</div>
+
+			<a ui-sref="signup" id="noAccount">Don't have an account?</a>
+		</div>
+	</form>
+</div>

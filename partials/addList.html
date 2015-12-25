@@ -1,0 +1,26 @@
+<div class="container">
+	<h2>Add a New Checklist</h2>
+	<form name="newListForm">
+		<div class="form-group">
+			<label>List Name</label>
+			<input name="name" type="text" class="form-control" ng-model="newList.name" required>
+		</div>
+		<div class="form-group">
+			<label>Type of List</label>
+			<select name="type" class="form-control" ng-model="newList.type" required>
+        	<option value="travel">Travel</option>
+        	<option value="camping">Camping</option>
+          <option value="cooking">Cooking</option>
+          <option value="misc">Miscellaneous</option>
+    	</select>
+    	</div>
+    	<div class="form-group">
+    		<div ng-repeat="item in items">
+        		<input type="text" class="form-control" placeholder="Item..." ng-model="item.text">
+      		</div>
+      		<button class="btn btn-info" ng-click="add()">New Item</button>
+          <button class="btn btn-danger" ng-click="remove()">Remove Item</button>
+      	</div>
+    	<button class="btn btn-primary" ng-click="submit(newList.name, newList.type, items)" ng-disabled="newListForm.$invalid">Submit</button>
+    </form>
+</div>
